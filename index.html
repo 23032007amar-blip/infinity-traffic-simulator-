@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Racer Infinity</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Main Menu -->
+    <div id="menu">
+
+        <h1>🚗 Traffic Racer Infinity</h1>
+
+        <button id="playBtn">▶ Play</button>
+        <button id="garageBtn">🚗 Garage</button>
+        <button id="shopBtn">🛒 Shop</button>
+        <button id="leaderboardBtn">🏆 Leaderboard</button>
+        <button id="settingsBtn">⚙ Settings</button>
+
+    </div>
+
+    <!-- Game Screen -->
+    <div id="game" style="display:none;">
+
+        <canvas id="gameCanvas" width="400" height="700"></canvas>
+
+        <!-- HUD -->
+        <div id="hud">
+
+            <span>🏆 Score:
+                <span id="score">0</span>
+            </span>
+
+            <span>🪙 Coins:
+                <span id="coins">0</span>
+            </span>
+
+            <span>❤️ Lives:
+                <span id="lives">3</span>
+            </span>
+
+            <span>⛽ Fuel:
+                <span id="fuel">100</span>%
+            </span>
+
+        </div>
+
+        <!-- Mobile Controls -->
+        <div id="controls">
+
+            <button id="leftBtn">⬅</button>
+
+            <button id="nitroBtn">⚡</button>
+
+            <button id="rightBtn">➡</button>
+
+        </div>
+
+    </div>
+
+    <!-- JavaScript Files -->
+    <script src="js/storage.js"></script>
+    <script src="js/road.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/traffic.js"></script>
+    <script src="js/coins.js"></script>
+    <script src="js/collision.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/garage.js"></script>
+    <script src="js/shop.js"></script>
+    <script src="js/leaderboard.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
